@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "net.nexify.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"MinecraftClientMixin",
+		"EndCrystalEntityMixin",
+		"ExplosionMixin",
+		"ClientPlayerInteractionManagerMixin",
+		"ClientWorldMixin",
+		"EndCrystalEntityRendererMixin",
+		"ClientConnectionMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "nexify",
+	"version": "${version}",
+	"name": "Nexify",
+	"description": "Lightweight optimization mod for Crystal PvP.",
+	"authors": [
+		"CassaBlanca00"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/nexify",
+		"sources": "https://github.com/cassablanca0/nexify"
+	},
+	"license": "GPL-3.0-or-later",
+	"icon": "assets/nexify/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nexify.Nexify"
+		],
+		"client": [
+			"net.nexify.NexifyClient"
+		]
+	},
+	"mixins": [
+		"nexify.mixins.json",
+		{
+			"config": "nexify.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
