@@ -9,7 +9,7 @@ It improves packet handling and reduces unnecessary network spam to provide a cl
 
 ⚡ Improves packet stability during Crystal PvP
 
-🎯 Smoother rotation handling
+🌠 Faster Crystal Breaking and Placing Speeds
 
 🧱 More consistent crystal placement
 
