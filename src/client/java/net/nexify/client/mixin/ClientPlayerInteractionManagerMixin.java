@@ -22,6 +22,19 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(ClientPlayerInteractionManager.class)
 public class ClientPlayerInteractionManagerMixin {
 
+
+
+
+    //------------------------ //
+    // CLIENT SIDE CRYSTAL BREAKING //
+    @Inject(method = "attackEntity", at = @At("HEAD"))
+    private void nexify$removeCrystalEarly(PlayerEntity player, Entity target, CallbackInfo ci) {
+
+        if (target instanceof EndCrystalEntity) {
+            target.remove(Entity.RemovalReason.KILLED);
+        }
+    }
+
     // ==============================
     // PLACE OPTIMIZATION
     // ==============================
